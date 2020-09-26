@@ -8,41 +8,41 @@ export default class CardValidatorWidget {
 
   static get markup() {
     return `
-    <div class="card-validator">
+    <div class="card-validator" data-widget="card-validator-widget">
       <ul class="cards">
         <li>
-          <span class="card visa" title="Visa">Visa</span>
+          <span class="card visa" data-id="card" title="Visa">Visa</span>
         </li>
         <li>
-          <span class="card master" title="Mastercard">Mastercard</span>
+          <span class="card master" data-id="card" title="Mastercard">Mastercard</span>
         </li>
         <li>
-          <span class="card maestro" title="Maestro">Maestro</span>
+          <span class="card maestro" data-id="card" title="Maestro">Maestro</span>
         </li>
         <li>
-          <span class="card amex" title="American Express">American Express</span>
+          <span class="card amex" data-id="card" title="American Express">American Express</span>
         </li>
         <li>
-          <span class="card discover" title="Discover">Discover</span>
+          <span class="card discover" data-id="card" title="Discover">Discover</span>
         </li>
         <li>
-          <span class="card diners" title="Diners Club">Diners Club</span>
+          <span class="card diners" data-id="card" title="Diners Club">Diners Club</span>
         </li>
         <li>
-          <span class="card jcb" title="JCB International">JCB International</span>
+          <span class="card jcb" data-id="card" title="JCB International">JCB International</span>
         </li>
         <li>
-          <span class="card unionpay" title="China UnionPay">China UnionPay</span>
+          <span class="card unionpay" data-id="card" title="China UnionPay">China UnionPay</span>
         </li>
         <li>
-          <span class="card mir" title="Мир">Мир</span>
+          <span class="card mir" data-id="card" title="Мир">Мир</span>
         </li>
       </ul>
       <form class="validator-form" data-id="form">
-        <input class="form-control" name="card_number" type="text" placeholder="Card number" required>
-        <a class="form-button" href="." data-id="button">Click to Validate</a>
+        <input class="form-control" data-id="input" name="card_number" type="text" placeholder="Card number" required>
+        <a class="form-button" href="#" data-id="button">Click to Validate</a>
       </form>
-      <p class="result"></p>
+      <p class="result" data-id="result"></p>
     </div>
     `;
   }
@@ -56,15 +56,15 @@ export default class CardValidatorWidget {
   }
 
   static get inputSelector() {
-    return '.form-control';
+    return '[data-id=input]';
   }
 
   static get cardSelector() {
-    return '.card';
+    return '[data-id=card]';
   }
 
   static get resultSelector() {
-    return '.result';
+    return '[data-id=result]';
   }
 
   bindToDOM() {
