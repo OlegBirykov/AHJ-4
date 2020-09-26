@@ -1,0 +1,31 @@
+Image: american_express.png
+Original name: american_express_curved_64px.png
+Source: https://findicons.com/icon/451688/american_express_curved_64px
+
+Image: dinersclub.png
+Original name: dinersclub.png
+Source: https://findicons.com/icon/608573/dinersclub
+
+Image: discover.png
+Original name: discover_curved.png
+Source: https://findicons.com/icon/223564/discover_curved
+
+Image: jcb.png
+Original name: jcb.png  
+Source: https://findicons.com/icon/608564/jcb
+
+Image: maestro.png
+Original name: maestro_curved_64px.png
+Source: https://findicons.com/icon/451687/maestro_curved_64px
+
+Image: mastercard.png
+Original name: mastercard_curved.png
+Source: https://findicons.com/icon/223569/mastercard_curved
+
+Image: unionpay.png
+Original name: unionpay.png 
+Source: https://findicons.com/icon/608579/unionpay
+
+Image: visa.png
+Original name: visa_curved.png
+Source: https://findicons.com/icon/223557/visa_curved
