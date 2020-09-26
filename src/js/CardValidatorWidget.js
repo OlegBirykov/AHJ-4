@@ -93,13 +93,12 @@ export default class CardValidatorWidget {
     this.result.innerText = result.text;
 
     if (!result.status) {
-      this.result.classList.add('invalid');
       this.result.classList.remove('valid');
       return;
     }
 
+    this.input.value = '';
     this.result.classList.add('valid');
-    this.result.classList.remove('invalid');
 
     const paySystem = getPaySystemInfo(number);
     if (paySystem < 0) {

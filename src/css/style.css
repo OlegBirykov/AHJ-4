@@ -96,12 +96,9 @@
 
 .result {
   margin: 8px 0 0 0;
+  color: red;
 }
 
 .valid {
   color: #00c800;
-}
-
-.invalid {
-  color: red;
 }
